@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--  src/main/webapp/6/selector9.html -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상태 선택자</title>
+<style type="text/css">
+
+/* input 태그에 입력 가능한 경우 배경색을 노란색으로 설정. 글자크기를 30px로*/
+input:enabled { background: yellow; font-size:30px;}
+
+/* input 태그에 입력 가능한 경우, 태그가 선택된(focus) 경우 배경색을 분홍색으로 설정. 글자크기를 15px로*/
+input:focus {background: pink; font-size: 15px;}
+
+/* input 태그에 입력 불가능한 경우 배경색을 검정색으로 흰색글씨로 설정*/
+input:disabled {background: black; color:white;}
+
+</style>
+</head>
+<body>
+<h2>입력이 가능한 input 태그</h2>
+<input type="text">
+<h2>입력이 불가능한 input 태그</h2>
+<input type="text" disabled="disabled" value="입력불가능">
+</body>
+</html>
