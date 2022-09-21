@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--  src/main/webapp/6/selector3.html -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.red{
+		color:red;
+	}
+	.blue{
+		color:blue;
+	}
+	input[type=text]{ 	/*type의 속성값이 text인 input 태그 선택*/
+		background-color: green;
+		}
+	input[type=password]{ /*type의 속성값이 password인 input 태그 선택*/ 
+		background-color: blue;
+	}
+	#yellow{
+		background-color: yellow;
+	}
+
+</style>
+</head>
+<body>
+<!-- class="red" : 글자색이 빨강, class="blue" : 글자색이 파랑-->
+<ul>
+  <li class="red">사과</li>
+  <li class="blue">바나나</li>
+  <li class="red">오렌지</li>
+  <li class="blue">감</li>
+</ul>
+<form>
+  <input type="text"><!-- 배경을 초록 -->
+  <input type="password"><br> <!-- 배경을 파랑 -->
+  <input type="text" id="yellow"> <!-- 배경을 노랑 -->
+  <input type="password" id="yellow"><br>
+</form>
+</body>
+</html>

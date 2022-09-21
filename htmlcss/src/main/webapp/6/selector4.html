@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--  src/main/webapp/6/selector4.html -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>후손 태그 선택, 자손태그 선택</title>
+<style>
+/* #header 태그의 하위 태그 중 h1 태그의 글자색을 빨강색으로*/
+#header h1 {color:red;}
+
+/* #header 태그의 자식 태그 중 h1 태그의 글자색을 분홍색으로  바로 밑, 태그 변경*/
+#header > h1{color:pink;}
+
+/* #header 태그 또는  h1 태그를 글자색을 파랑색으로*/
+#header , h1 {color:blue;}
+
+</style>
+</head>
+<body>
+<h1 class="title">h1 class="title" 태그</h1>
+<div id="header">
+  <h1 class="title">h1 class="title" 태그</h1>
+  <div id="nav">
+     <h1>div id="nav" 하위 h1 태그</h1>
+  </div>
+  <p>#header 태그의 하위 p태그
+</div>
+<h1 id="content">body의 하위 h1 태그</h1>
+<p>body 태그의 하위 p태그
+
+</body>
+</html>
